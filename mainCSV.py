@@ -1,10 +1,13 @@
 # # This is the Main file for the program
+# 04.13.2020 - opens and reads the project CSV and sends an email to the first entry in row 3 of excel ('2' here)
 import smtplib
 import csv
 
+# vaclaims.us@gmail.com
 sender_gmail = 'vaclaims.us@gmail.com'
+# 123qwe!@#QWE
 sender_password = '123qwe!@#QWE'
-body = 'Email sent successfully.'
+body = 'You were referred by a friend. \n To our VA claims prep service.'
 
 # this section is for handling CSV files
 with open('MOCK.csv') as csv_file:
